@@ -1,35 +1,76 @@
 *{
-    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .body-wrapper{
+    background-color: whitesmoke;
     display:flex;
 }
 
 .background {
+    position:relative;
     padding:0px;
     margin:0px;
 }
 
 .background-img {
     width:auto;
-    height:auto;
-    max-height:100vh;
-    padding:0px;
+    height:930px;
+}
+
+.logo-holder{
+    position:absolute;
+    background-color: rgba(116, 78, 78, 0.5);
+    top:200px;
+    left:0px;
+    width:620px;
+    height:200px;
+}
+
+.odin {
+    position:absolute;
+    top:15px;
+    left:50px;
+    width:20%
+}
+
+.odin-text {
+    position: absolute;
+    color:white;
+    left:200px;
+    top:-85px;
+    font-size:125px;
 }
 
 .header {
     display:flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 .header-text {
-    font-family:Arial, Helvetica, sans-serif;
+    margin-top:100px;
     padding:10px 150px;
 }
 
 .sign-up{
-    margin: 125px 150px 50px 150px;
+    position: relative;
+}
+
+.lets{
+    position: absolute;
+    top:20px;
+    left:210px;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.form{
+    display:grid;
+    justify-content:start;
+    column-gap:170px;
+    grid-template-columns: 200px 200px;
+    margin: 0px 50px 50px 50px;
     padding:100px 150px;
     background-color: white;
     box-shadow: 10px 5px 5px grey;
@@ -41,9 +82,39 @@ label, input {
     background-color: white;
 }
 
-button {
-    width:100px;
+label{
+    color:darkslategray;
+}
+
+input{
+    box-sizing: border-box;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    height:30px;
+    outline:none;
+}
+
+input:focus{
+    border: 2px solid skyblue;
+}
+
+.create-account {
+    width:15%;
+    border:18px solid green;
     border-radius:10px;
+    margin:40px 0px 0px 50px;
     background-color: green;
     color:white;
+    font-weight:bold;
 }
+
+.sign-in{
+    padding:25px 0px;
+    margin-left:50px;
+}
+
+.form-child{
+    padding:10px;
+}
+
+
